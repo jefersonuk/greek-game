@@ -11,6 +11,9 @@
       margin: 0;
       padding: 0;
       color: #0f172a;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
     }
     header {
       background: #0b3a6f;
@@ -19,6 +22,7 @@
       text-align: center;
     }
     main {
+      flex: 1;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -49,6 +53,14 @@
     a.button:hover {
       background: #094acc;
     }
+    footer {
+      background: #f1f5f9;
+      padding: 15px;
+      text-align: center;
+      font-size: 14px;
+      color: #475569;
+      border-top: 1px solid #dbe3ef;
+    }
   </style>
 </head>
 <body>
@@ -56,18 +68,23 @@
     <h1>Greek Game • Menu Principal</h1>
     <p>Escolha o modo de estudo</p>
   </header>
+
   <main>
     <div class="card">
       <h2>🎴 Jogo de Tradução</h2>
       <p>Pratique o vocabulário básico do grego koiné.</p>
-      <a href="Greek-game-por-Jeferson-Unrein.html" class="button">Acessar jogo</a>
+      <a href="Greek-game-por-Jeferson-Unrein.html?v=2" class="button">Acessar jogo</a>
     </div>
 
     <div class="card">
       <h2>📝 Simulado de Declinações</h2>
-      <p>Responda 10 questões aleatórias de um banco com 300 itens.</p>
+      <p>Responda 10 questões aleatórias de um banco com 300 itens corrigidos.</p>
       <a href="Simulado-Declinacoes-300-CORRIGIDO.html?v=4" class="button">Acessar simulado</a>
     </div>
   </main>
+
+  <footer>
+    © Greek Game — Jeferson Unrein. Todos os direitos reservados.
+  </footer>
 </body>
 </html>
